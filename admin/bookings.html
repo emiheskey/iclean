@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="assets/img/favicon.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>iClean - Bookings</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Bootstrap core CSS     -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Animation library for notifications   -->
+    <link href="assets/css/animate.min.css" rel="stylesheet"/>
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="assets/css/light-bootstrap-dashboard.css" rel="stylesheet"/>
+
+    <!--  Custom CSS    -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-select.min.css" rel="stylesheet" />
+
+    <!--     Fonts and icons     -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar" data-color="purple" data-image="assets/img/sidebar-5.jpg">
+
+    <!--
+
+        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+        Tip 2: you can also add an image using data-image tag
+
+    -->
+
+    	<div class="sidebar-wrapper">
+            <div class="logo">
+                <a href="#" class="simple-text">
+                    <img src="assets/img/new_logo.png">
+                </a>
+            </div>
+
+            <ul class="nav">
+                <li>
+                    <a href="dashboard.html">
+                        <i class="pe-7s-graph"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="bookings.html">
+                        <i class="pe-7s-note2"></i>
+                        <p>Bookings <span class="badge">101</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="cleaners.html">
+                        <i class="pe-7s-user"></i>
+                        <p>Cleaners <span class="badge">53</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="customers.html">
+                        <i class="pe-7s-users"></i>
+                        <p>Customers <span class="badge">22</span></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="icons.html">
+                        <i class="pe-7s-cash"></i>
+                        <p>Cleaners Payments</p>
+                    </a>
+                </li>
+				<li class="active-pro">
+                    <a href="#">
+                        <i class="pe-7s-power"></i>
+                        <p>Log Out</p>
+                    </a>
+                </li>
+            </ul>
+    	</div>
+    </div>
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><i class="pe-7s-note2"></i> Bookings</a>
+                </div>
+                <div class="collapse navbar-collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">
+                                Log out
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="content">
+            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                            		<div class="pull-right">
+                                    Filter by
+                                    <a href="#" class="btn btn-default">All</a>
+                                    <a href="#" class="btn btn-info">Done</a>
+                                    <a href="#" class="btn btn-warning">Pending</a>
+                                    <a href="#" class="btn btn-danger">Cancelled</a>
+                                    <a href="#" class="btn btn-success">New</a>
+                                 </div>
+                                <h4 class="title">All cleaning bookings</h4>
+                                <p class="category">View all cleaning services</p>
+                            </div>
+                            <div class="content table-responsive table-full-width">
+                                <table class="table table-hover table-striped">
+                                    <thead>
+                                        <th>#</th>
+                                    	<th>Customer Name</th>
+                                    	<th>Type of Cleaning</th>
+                                    	<th>Location</th>
+                                    	<th>Amount</th>
+                                        <th>Date</th>
+                                        <th>Time</th>
+                                        <th>Duration</th>
+                                        <th>Status</th>
+                                        <th></th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        	<td>1</td>
+                                        	<td>Charles Amos</td>
+                                        	<td>After Party</td>
+                                        	<td>Asokoro</td>
+                                        	<td>N5,600</td>
+                                           <td>12/06/2017</td>
+                                           <td>7:00am</td>
+                                           <td>3 hours</td>
+                                           <td><span class="label label-success">New</span></td>
+                                           <td>
+                                           		<a href="#myModal" class="btn btn-primary" data-toggle="modal">View</a>
+                                           </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>2</td>
+                                        	<td>Young Obi</td>
+                                        	<td>Moving In/Out</td>
+                                        	<td>Wuse 2</td>
+                                        	<td>N10,900</td>
+                                           <td>11/06/2017</td>
+                                           <td>8:00am</td>
+                                           <td>9 hours</td>
+                                        	<td><span class="label label-default">Done</span></td>
+                                           <td>
+                                           		<a href="#myDone" class="btn btn-primary" data-toggle="modal">View</a>
+                                           </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>3</td>
+                                        	<td>Charles Amos</td>
+                                        	<td>Regular</td>
+                                        	<td>Lokogoma</td>
+                                        	<td>N15,600</td>
+                                           <td>10/06/2017</td>
+                                           <td>12:00pm</td>
+                                           <td>6 hours</td>
+                                           <td><span class="label label-default">Done</span></td>
+                                           <td>
+                                           		<a href="#" class="btn btn-primary">View</a>
+                                           </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>4</td>
+                                        	<td>Segun Alonge</td>
+                                        	<td>Regular</td>
+                                        	<td>Lokogoma</td>
+                                        	<td>N34,000</td>
+                                           <td>23/05/2017</td>
+                                           <td>1:00pm</td>
+                                           <td>5 hours</td>
+                                           <td><span class="label label-warning">Pending</span></td>
+                                           <td>
+                                           		<a href="#" class="btn btn-primary">View</a>
+                                           </td>
+                                        </tr>
+                                        <tr>
+                                        	<td>5</td>
+                                        	<td>Emmanuel Ida</td>
+                                        	<td>After Party</td>
+                                        	<td>Wuse 2</td>
+                                        	<td>N37,000</td>
+                                           <td>19/05/2017</td>
+                                           <td>9:00am</td>
+                                           <td>8 hours</td>
+                                           <td><span class="label label-danger">Cancelled</span></td>
+                                           <td>
+                                           		<a href="#" class="btn btn-primary">View</a>
+                                           </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        
+        </div>
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <nav class="pull-left">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright pull-right">
+                    &copy; 2017 <a href="#">iClean</a>, made with love by <a href="http://www.projaro.com" target="_blank">Projaro</a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Booking details - ID #568</h4>
+      </div>
+      <div class="modal-body">
+        <table class="table table-striped table-hover">
+        	<tbody>
+           	<tr>
+            		<td>Customer Name</td>
+                  <td>Charles Amos</td>
+               </tr>
+               <tr>
+            		<td>Type of Cleaning</td>
+                  <td>After Party</td>
+               </tr>
+               <tr>
+            		<td>Location</td>
+                  <td>Asokoro</td>
+               </tr>
+               <tr>
+            		<td>Amount</td>
+                  <td>N30,000</td>
+               </tr>
+               <tr>
+            		<td>Date</td>
+                  <td>12/06/2017</td>
+               </tr>
+               <tr>
+            		<td>Time</td>
+                  <td>7:00am</td>
+               </tr>
+               <tr>
+            		<td>Duration</td>
+                  <td>3 hours</td>
+               </tr>
+               <tr>
+            		<td>Status</td>
+                  <td><span class="label label-success">New</span></td>
+               </tr>
+               <tr>
+            		<td>
+                    Assign booking
+                   </td>
+                   <td>
+                    <select class="cleaners form-control" data-live-search="true" title="Select a cleaner">
+                      <option>John Bulus [20]</option>
+                      <option>Charles Amaos [45]</option>
+                      <option>Relish Vaughan [23]</option>
+                      <option>Benjamin Yunusa [43]</option>
+                      <option>Jenifer Elias [56]</option>
+                      <option>Okutepa Marcus [78]</option>
+                      <option>Remi Martins [26]</option>
+                    </select>
+                  </td>
+               </tr>
+           </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary btn-fill">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Message Modal -->
+<div class="modal fade" id="myDone" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Booking details - ID #567</h4>
+      </div>
+      <div class="modal-body">
+        <table class="table table-striped table-hover">
+        	<tbody>
+           	<tr>
+            		<td>Customer Name</td>
+                  <td>Charles Amos</td>
+               </tr>
+               <tr>
+            		<td>Type of Cleaning</td>
+                  <td>After Party</td>
+               </tr>
+               <tr>
+            		<td>Location</td>
+                  <td>Asokoro</td>
+               </tr>
+               <tr>
+            		<td>Amount</td>
+                  <td>N30,000</td>
+               </tr>
+               <tr>
+            		<td>Date</td>
+                  <td>12/06/2017</td>
+               </tr>
+               <tr>
+            		<td>Time</td>
+                  <td>7:00am</td>
+               </tr>
+               <tr>
+            		<td>Duration</td>
+                  <td>3 hours</td>
+               </tr>
+               <tr>
+            		<td>Status</td>
+                  <td><span class="label label-default">Done</span></td>
+               </tr>
+               <tr>
+            		<td>Assigned to</td>
+                  <td><a href="#">John Bulus</a></td>
+               </tr>
+           </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-fill" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+    <!--   Core JS Files   -->
+    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+	<!--  Checkbox, Radio & Switch Plugins -->
+	<script src="assets/js/bootstrap-checkbox-radio-switch.js"></script>
+
+	<!--  Charts Plugin -->
+	<script src="assets/js/chartist.min.js"></script>
+
+    <!--  Notifications Plugin    -->
+    <script src="assets/js/bootstrap-notify.js"></script>
+
+    <!--  Google Maps Plugin    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+    <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+	<script src="assets/js/light-bootstrap-dashboard.js"></script>
+
+	<!-- Light Bootstrap JS! -->
+	<script src="assets/js/main.js"></script>
+    
+    <script src="assets/js/bootstrap-select.js"></script>
+    <script>
+		$('.cleaners').selectpicker({
+			  size: 'auto'
+			});
+
+	</script>
+
+</html>

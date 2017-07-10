@@ -1,0 +1,201 @@
+@media (min-width: 992px){
+    .typo-line{
+        padding-left: 140px;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    .typo-line .category{
+        transform: translateY(-50%);
+        top: 50%;
+        left: 0px;
+        position: absolute;
+    }
+}
+
+.all-icons [class*="pe-"]{
+    font-size: 40px;
+}
+.all-icons input{
+    border: 0;
+}
+.all-icons .font-icon-detail{
+    text-align: center;
+    padding: 45px 0px 30px;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    margin: 15px 0;
+}
+.all-icons .font-icon-detail input{
+    margin: 25px auto 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: #aaa;
+    font-size: 13px;
+}
+
+#map{
+    position:relative;
+    width:100%;
+    height: calc(100% - 60px);
+}
+
+.places-buttons .btn{
+    margin-bottom: 30px
+}
+.sidebar .nav > li.active-pro{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+}
+.sidebar .nav > li.active-pro a{
+    background: rgba(255, 255, 255, 0.14);
+    opacity: 1;
+    color: #FFFFFF;
+}
+
+.table-upgrade td:nth-child(2),
+.table-upgrade td:nth-child(3){
+    text-align: center;
+}
+
+.dash-widget {
+	margin: 20px;
+}
+.dash-widget .col-md-3 {
+	width: 23.5%;
+}
+.dashget {
+	padding: 10px;
+	border-radius: 5px;
+	margin: 0px 6px;
+	color: #fff;
+}
+.dashget i {
+font-size: 5em;
+float: left;
+width: 70px;
+margin-right: 20px;
+}
+.dashget span {
+	font-size: 2em;
+	padding: 0; margin: 0;
+}
+.dashget h4 { font-size: 16px; padding: 0; margin: 0;}
+.dashget.purple {
+	background: purple;
+}
+.dashget.orange {
+	background: orange;
+}
+.dashget.maroon {
+	background: maroon;
+}
+.dashget.blue {
+	background: #036;
+}
+.dashget.teal {
+	background: teal;
+}
+p.margin20 {
+	margin: 20px;
+}
+
+/* Manage Interview */
+.manage {
+	padding: 10px;
+}
+.manage .col-md-4 {
+	width: 31%;
+}
+.manage .item-inter{
+	border-radius: 5px;
+	min-height: 330px;
+	border: 1px solid #f3f3f3;
+	margin: 0px 20px 20px 0px;
+	padding: 0;
+	overflow: hidden;
+}
+.manage .item-inter .top-side {
+	margin: 0; padding: 10px 10px 15px 10px;
+	background: #f3f3f3 url('../../assets/img/sidebar.png');
+	font-size: 1.5em;
+	overflow: hidden;
+	border-bottom: 1px solid #f9f9f9
+}
+.manage .item-inter .top-side span {
+	font-size: 14px;
+	padding-top: 20px;
+	color: #666;
+}
+.manage .item-inter .top-side img {
+	max-width: 100px;
+	float: left;
+	 margin-right: 20px;
+	 border: 1px solid #ccc;
+}
+.manage .item-inter .table {
+	border-color: #ffff;
+}
+.manage .item-inter .btn
+{
+	display: none;
+}
+.manage .item-inter:hover .btn
+{
+	display: inline-block;
+}
+.manage .item-inter td.rating {
+	color: royalblue;
+}
+img.img-50 {
+	max-width: 50px;
+}
+
+body.login-bg {
+	background: #339 url(../img/clean.jpg) no-repeat;
+}
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.form-signin .logo-img {
+	text-align:center;
+	margin: 20px auto;
+	width: 150px;
+	height: 60px;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

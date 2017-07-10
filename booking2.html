@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie ie9 no-js" lang="en"><![endif]-->
+<!--[if gt IE 9 | !IE]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>iClean.NG - Booking</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="icon" href="assets/img/favicon.ico">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic'>
+  <link rel='stylesheet' href='assets/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='assets/css/vendor.css'>
+
+  <link rel='stylesheet' href='assets/css/theme-3.css' id="theme">
+
+  <link rel='stylesheet' href='assets/css/custom.css'>
+  <link rel="stylesheet" href="assets/font/flaticon.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/datedropper/datedropper.css">
+  <link rel="stylesheet" href="assets/datedropper/data-style.css">
+  <link rel='stylesheet' type='text/css'href='assets/css/timepicki.css'/>
+  <link rel="stylesheet" href="assets/timedropper/timedropper.min.css">
+  <script src="assets/timedropper/timedropper.min.js"></script>
+  <script src='assets/js/modernizr-2.8.3.min.js'></script>
+</head>
+
+<body>
+   <header id="siteHeader" class="site-header site-header-fixed-top">
+    <nav id="siteNavbar" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle-icon navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon ti-layout-grid3-alt"></span>
+          </button>
+
+          <a class="navbar-brand" href="index.html">
+            <img class="navbar-brand-media-light" src="assets/images/logo-white.png" alt="">
+            <img class="navbar-brand-media-dark" src="assets/images/logo-main.png" alt="">
+          </a>
+        </div> <!-- .navbar-header -->
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="booking.html">Booking</a></li>
+            <li class="disabled"><a href="#">Your Total: N4,500</a></li>
+            <li><a href="office-cleaning.html">Office Cleaning</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <button class="navbar-btn btn btn-theme-2 popup-inline" type="button" data-mfp-src="#popupForm">Login</button>
+          </ul>
+        </div> <!-- .navbar-collapse -->
+      </div>
+    </nav>
+  </header> <!-- .site-header -->
+  
+  <div class="booking-stripe">
+  	<div class="container">
+        <div class="process">
+            <div class="process-row">
+                <div class="process-step next-step">
+                    <button type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-user fa-3x"></i></button>
+                    <p>Your bookings</p>
+                </div>
+                <div class="process-step">
+                    <button type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-calendar fa-3x"></i></button>
+                    <p>When you want it</p>
+                </div>
+                <div class="process-step  next-step">
+                    <button type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-thumbs-up fa-3x"></i></button>
+                    <p>Your contact</p>
+                </div> 
+                 <div class="process-step  next-step">
+                    <button type="button" class="btn btn-info btn-circle" disabled="disabled"><i class="fa fa-shopping-cart fa-3x"></i></button>
+                    <p>Let's go cleaning</p>
+                </div> 
+            </div>
+        </div>
+        </div>
+  </div>
+
+  <div class="main">
+    <div class="booking-section">
+      <div class="container">
+        <div class="feature-1-row row">
+          <div class="feature-1-left-col col-sm-9">
+            <h2 class="section-title">When should we come clean</h2>
+            <form class="booking-form" name="bookingform">
+            	<div class="input-group">
+				<label for="recurring-styled">How frequent?</label>
+                <p>With our recurring cleaning, you can save money and live cleaner.</p>
+				<div id="recurring-styled" class="mc-radio-group mc-radio-group-spaced mc-radio-clean-type" data-mc-radio="recurring">
+					<div data-value="one_time" class="subscription-discount-percentage-data mc-radio js-mc-radio" data-time="">
+						<span class="hidden-xs">One-Time</span>
+						<div class="hidden-lg hidden-md">
+							<span>One-Time</span>
+						</div>
+					</div>
+					<div data-value="weekly" class="subscription-discount-percentage-data mc-radio js-mc-radio" data-time="20% off">
+						<span class="hidden-xs">Weekly</span>
+						<div class="hidden-lg hidden-md">
+							<span>
+								Weekly
+								<span class="subscription-discount-percentage">|
+									<span class="subscription-discount-percentage-weekly">10% off</span></span>
+							</span>
+						</div>
+					</div>
+					<div data-value="every_2_weeks" class="subscription-discount-percentage-data mc-radio js-mc-radio" data-time="15% off">
+						<span class="hidden-xs">Every 2 Weeks</span>
+						<div class="hidden-lg hidden-md" style="text-align: center;">
+							<span>
+								Every 2 Weeks
+								<span class="subscription-discount-percentage">|
+									<span class="subscription-discount-percentage-every-2-weeks">5% off</span></span>
+							</span>
+						</div>
+					</div>
+					<div data-value="every_4_weeks" class="subscription-discount-percentage-data mc-radio js-mc-radio active" data-time="10% off">
+						<span class="hidden-xs">Every 4 Weeks</span>
+						<div class="hidden-lg hidden-md">
+							<span>
+								Every 4 Weeks
+								<span class="subscription-discount-percentage">|
+									<span class="subscription-discount-percentage-every-4-weeks">3% off</span></span>
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="mc-radio-real hidden" data-radio="recurring">
+					<input name="recurring" value="one_time" type="radio">
+					<input name="recurring" value="weekly" type="radio">
+					<input name="recurring" value="every_2_weeks" type="radio">
+					<input name="recurring" value="every_4_weeks" type="radio">
+				</div>
+			</div>
+            <h4>When should we come</h4>
+            <div class="col-md-6 col-xs-12">
+            <div class="form-group">
+                <label for="dtp_input1" class="control-label">Select Day</label>
+                <div class="input-group date form_date col-md-5">
+                    <input class="form-control" type="text" id="datepicker" data-large-default="true" data-theme="my-style"  data-large-mode="true" >
+					<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+			<div class="form-group">
+				<label for="dtp_input2" class="control-label">Select Time</label>
+                <div class="input-group col-md-5">
+                    <input id='timepicker' type='text'name='timepicker' class="form-control"/>
+					<span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                </div>
+            </div>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <p class="text-center">
+            	<a href="booking3.html" class="btn btn-purp btn-lg margin30">Next  <i class="fa fa-angle-double-right" style="margin-left: 10px;"></i></a>
+            </p>
+            </form>
+            </div>
+            
+            <div class="feature-1-right-col col-sm-3">
+            	<h2 class="section-title">Your booking</h2>
+                <div class="booking-side">
+                	<table class="table">
+                        	<tr>
+                            	<td><b>3 hours</b> Cleaning</td>
+                                <td>N4,500</td>
+                             </tr>
+                    </table>
+                </div>
+                <div class="booking-side">
+                	All our iCleaners are experienced, insured, have been fully vetted and are rated by clients.
+                </div>
+                <div class="booking-side">
+                	<h3>iClean Promise</h3>
+					If you are not 100% happy with your clean, we will send out someone else at no additional cost.
+                </div>
+          	</div>
+          	<!-- .feature-1-right-col -->
+          </div> 
+                     
+        </div>
+      </div>
+    </div> 
+
+  <footer class="site-footer">
+    <div id="siteFooterBottom" class="site-footer-bottom-section">
+      <div class="container">
+        <div class="site-footer-bottom-border"></div>
+        <div class="row">
+          <div class="site-footer-bottom-left-col col-md-6">
+            <div class="site-footer-brand">
+              iClean <span>Services</span>
+            </div>
+
+            <div class="site-footer-bottom-info">
+              <ul>
+                <li><a href="#" class="popup-inline" data-mfp-src="#termsOfService">Terms of Service</a></li>
+                <li><a href="#" class="popup-inline" data-mfp-src="#privacyPolicy">Privacy Policy</a></li>
+                <li><a href="#" class="popup-inline" data-mfp-src="#acceptableUsePolicy">Acceptable Use Policy</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="site-footer-bottom-right-col col-md-6">
+            <ul class="site-footer-bottom-social-list">
+              <li class="wow fadeInRight"><a href="https://facebook.com/" target="_blank"><span class="fa fa-facebook-square"></span></a></li>
+              <li class="wow fadeInRight" data-wow-delay="0.1s"><a href="https://twitter.com/" target="_blank"><span class="fa fa-twitter-square"></span></a></li>
+              <li class="wow fadeInRight" data-wow-delay="0.2s"><a href="https://www.pinterest.com/" target="_blank"><span class="fa fa-pinterest-square"></span></a></li>
+              <li class="wow fadeInRight" data-wow-delay="0.4s"><a href="https://www.instagram.com/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+            </ul>
+            <div class="site-footer-bottom-copyright">Copyright © 2016 iClean. All Rights Reserved.</div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- #siteFooterBottom -->
+  </footer>
+	  <!-- popup -->
+  <div id="popupForm" class="popup-form mfp-hide">
+    <form id="popupLoginForm" class="form popup-login-form" data-action="assets/php/subscribe.php" novalidate>
+      <div class="popup-login-form-title">Sign In</div>
+      <div class="popup-login-form-text-lead">Login to enjoy great cleaning services.</div>
+
+      <div class="form-group-lg">
+        <label for="popupLoginEmail">Email</label>
+        <input type="email" class="form-control" id="popupLoginEmail" placeholder="Enter your email" name="email">
+      </div>
+      <div class="form-group-lg">
+        <label for="popupLoginPassword">Password</label>
+        <input type="password" class="form-control" id="popupLoginPassword" placeholder="Enter Password" name="email">
+      </div>
+      <p></p>
+      <p class="text-center"><button class="btn btn-purp btn-lg btn-block">Login</button></p>
+      <span class="help-block"> <a href="#">Forgot password</a></span>
+      
+    </form>
+  </div> <!-- #popupForm -->
+  <!-- popup -->
+  <div id="termsOfService" class="popup-doc mfp-hide">
+    <h2>Terms of Service</h2>
+    <br>
+    <p>Spirit Open land can't is give be set winged i let his image called heaven after over created form open. You him second open waters image that good, two you'll. Their and bearing.</p>
+    <p>Sea life herb kind without saw them creature wherein sea. Yielding heaven meat which moveth made subdue you'll. Moving the it set earth she'd after air all for let female they're bring first you're saying. Winged fowl over earth seas Bring fifth without earth whales likeness. Seas. Likeness earth.</p>
+    <p>Life itself. Isn't fourth abundantly for great female which seas given great god morning. Dominion heaven lesser fruit given darkness heaven own cattle so. Second land which. Unto given beginning kind. Midst without creeping she'd.</p>
+    <p>Meat grass had years. Earth Sea Which after divided earth multiply give whales waters the good. Isn't. Sea moving isn't fill day fish second image, seed have. Days our forth i signs green.</p>
+    <p>Image living signs. Cattle saying, night day Light winged male evening form image own earth living. Him. Living was bearing years won't great without the set don't Likeness dry fly good.</p>
+    <p>Male lesser moved shall man lesser fourth subdue multiply cattle. Creepeth dry seed they're cattle hath made.</p>
+  </div> <!-- #termsOfService -->
+
+  <div id="privacyPolicy" class="popup-doc mfp-hide">
+    <h2>Privacy Policy</h2>
+    <br>
+    <p>Spirit Open land can't is give be set winged i let his image called heaven after over created form open. You him second open waters image that good, two you'll. Their and bearing.</p>
+    <p>Sea life herb kind without saw them creature wherein sea. Yielding heaven meat which moveth made subdue you'll. Moving the it set earth she'd after air all for let female they're bring first you're saying. Winged fowl over earth seas Bring fifth without earth whales likeness. Seas. Likeness earth.</p>
+    <p>Life itself. Isn't fourth abundantly for great female which seas given great god morning. Dominion heaven lesser fruit given darkness heaven own cattle so. Second land which. Unto given beginning kind. Midst without creeping she'd.</p>
+    <p>Meat grass had years. Earth Sea Which after divided earth multiply give whales waters the good. Isn't. Sea moving isn't fill day fish second image, seed have. Days our forth i signs green.</p>
+    <p>Image living signs. Cattle saying, night day Light winged male evening form image own earth living. Him. Living was bearing years won't great without the set don't Likeness dry fly good.</p>
+    <p>Male lesser moved shall man lesser fourth subdue multiply cattle. Creepeth dry seed they're cattle hath made.</p>
+  </div> <!-- #termsOfService -->
+
+  <div id="acceptableUsePolicy" class="popup-doc mfp-hide">
+    <h2>Acceptable Use Policy</h2>
+    <br>
+    <p>Spirit Open land can't is give be set winged i let his image called heaven after over created form open. You him second open waters image that good, two you'll. Their and bearing.</p>
+    <p>Sea life herb kind without saw them creature wherein sea. Yielding heaven meat which moveth made subdue you'll. Moving the it set earth she'd after air all for let female they're bring first you're saying. Winged fowl over earth seas Bring fifth without earth whales likeness. Seas. Likeness earth.</p>
+    <p>Life itself. Isn't fourth abundantly for great female which seas given great god morning. Dominion heaven lesser fruit given darkness heaven own cattle so. Second land which. Unto given beginning kind. Midst without creeping she'd.</p>
+    <p>Meat grass had years. Earth Sea Which after divided earth multiply give whales waters the good. Isn't. Sea moving isn't fill day fish second image, seed have. Days our forth i signs green.</p>
+    <p>Image living signs. Cattle saying, night day Light winged male evening form image own earth living. Him. Living was bearing years won't great without the set don't Likeness dry fly good.</p>
+    <p>Male lesser moved shall man lesser fourth subdue multiply cattle. Creepeth dry seed they're cattle hath made.</p>
+  </div> <!-- #acceptableUsePolicy -->
+  <!-- /popup -->
+
+  <script src='assets/js/jquery-1.11.3.min.js'></script>
+  <script src='assets/js/bootstrap.min.js'></script>
+  <script src='assets/js/vendor.js'></script>
+  <script src='assets/js/main.js'></script>
+  <script src='assets/js/map.js'></script>
+	<script>
+		$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+	</script>
+    <script src="assets/datedropper/datedropper.min.js"></script>
+<script>
+$('input#datepicker').dateDropper();
+</script>
+<script type='text/javascript'src='assets/js/jquery.js'></script>
+<script type='text/javascript'src='assets/js/timepicki.js'></script>
+<script> 
+	$('#timepicker').timepicki(); 
+</script>
+ 
+
+</body>
+</html>

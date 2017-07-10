@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie ie9 no-js" lang="en"><![endif]-->
+<!--[if gt IE 9 | !IE]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>iClean.NG - Booking</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="icon" href="assets/img/favicon.ico">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic'>
+  <link rel='stylesheet' href='assets/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='assets/css/vendor.css'>
+
+  <link rel='stylesheet' href='assets/css/theme-3.css' id="theme">
+
+  <link rel='stylesheet' href='assets/css/custom.css'>
+  <link rel="stylesheet" href="assets/font/flaticon.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <script src='assets/js/modernizr-2.8.3.min.js'></script>
+</head>
+
+<body>
+
+   <header id="siteHeader" class="site-header site-header-fixed-top">
+    <nav id="siteNavbar" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle-icon navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon ti-layout-grid3-alt"></span>
+          </button>
+
+          <a class="navbar-brand" href="index.html">
+            <img class="navbar-brand-media-light" src="assets/images/logo-white.png" alt="">
+            <img class="navbar-brand-media-dark" src="assets/images/logo-main.png" alt="">
+          </a>
+        </div> <!-- .navbar-header -->
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="booking.html">Booking</a></li>
+            <li class="disabled"><a href="#">Your Total: N4,500</a></li>
+            <li><a href="office-cleaning.html">Office Cleaning</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <button class="navbar-btn btn btn-theme-2 popup-inline" type="button" data-mfp-src="#popupForm">Login</button>
+          </ul>
+        </div> <!-- .navbar-collapse -->
+      </div>
+    </nav>
+  </header> <!-- .site-header -->
+  
+  <div class="booking-stripe">
+  	<div class="container">
+        <div class="process">
+            <div class="process-row">
+                <div class="process-step">
+                    <button type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-user fa-3x"></i></button>
+                    <p>Your bookings</p>
+                </div>
+                <div class="process-step next-step">
+                    <button type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-calendar fa-3x"></i></button>
+                    <p>When you want it</p>
+                </div>
+                <div class="process-step  next-step">
+                    <button type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-thumbs-up fa-3x"></i></button>
+                    <p>Your contact</p>
+                </div> 
+                 <div class="process-step  next-step">
+                    <button type="button" class="btn btn-info btn-circle" disabled="disabled"><i class="fa fa-shopping-cart fa-3x"></i></button>
+                    <p>Let's go cleaning</p>
+                </div> 
+            </div>
+        </div>
+        </div>
+  </div>
+
+  <div class="main">
+    <div class="booking-section">
+      <div class="container">
+        <div class="feature-1-row row">
+          <div class="feature-1-left-col col-sm-9">
+            <h2 class="section-title">Booking for today</h2>
+            <form class="booking-form" name="bookingform">
+            	<div class="input-group ">
+    			<label for="room_bedroom-styled">Number of Bedrooms</label>
+    			<div id="room_bedroom-styled" class="mc-radio-group" data-mc-radio="room_bedroom">
+    				<div data-value="0" class="mc-radio js-mc-radio">Studio</div>
+    				<div data-value="1" class="mc-radio js-mc-radio">1</div>
+    				<div data-value="2" class="mc-radio js-mc-radio">2</div>
+    				<div data-value="3" class="mc-radio js-mc-radio">3</div>
+    				<div data-value="4" class="mc-radio js-mc-radio">4</div>
+    				<div data-value="5" class="mc-radio js-mc-radio">5</div>
+    			</div>
+
+    			<div class="mc-radio-real hidden" data-radio="room_bedroom">
+    				<input name="room_bedroom" value="0" data-test="init" type="radio">
+    				<input name="room_bedroom" value="1" data-test="init" type="radio">
+    				<input name="room_bedroom" value="2" data-test="init" type="radio">
+    				<input name="room_bedroom" value="3" data-test="init" type="radio">
+    				<input name="room_bedroom" value="4" data-test="init" type="radio">
+    				<input name="room_bedroom" value="5" data-test="init" type="radio">
+    			</div>
+    		</div>
+            <div class="input-group">
+				<label for="room_bath-styled">Number of Bathrooms</label>
+				<div id="room_bath-styled" class="mc-radio-group" data-mc-radio="room_bath">
+                	<div data-value="1" class="mc-radio js-mc-radio">1</div>
+					<div data-value="2" class="mc-radio js-mc-radio">2</div>
+					<div data-value="3" class="mc-radio js-mc-radio">3</div>
+					<div data-value="4" class="mc-radio js-mc-radio">4</div>
+					<div data-value="5" class="mc-radio js-mc-radio">5+</div>
+					
+				</div>
+
+				<div class="mc-radio-real hidden" data-radio="room_bath">
+					<input name="room_bath" value="1" type="radio">
+					<input name="room_bath" value="2" type="radio">
+					<input name="room_bath" value="3" type="radio">
+					<input name="room_bath" value="4" type="radio">
+					<input name="room_bath" value="5" type="radio">
+					<input name="room_bath" value="6" type="radio">
+				</div>
+			</div>
+            <div class="extra-tasks">
+            <h4>What other things would you want us to clean?</h4>
+            	<div class="form-group"> <div id="div_id_laundry" class="checkbox" data-original-title="" title=""> <div class="checkbox-style"> <input class="checkboxinput checkbox" type="checkbox"> <label for="id_laundry" class="" data-toggle="tooltip" data-placement="top" title="+1.5hours">
+                    Laundry + Ironing
+                    <div class="clearfix"></div>
+                    <i class="flaticon-shirt"></i><br>
+                    &#8358;3,000 
+                    </label> </div> </div> </div>
+                 <div class="form-group"> <div id="div_id_in_fridge" class="checkbox" data-original-title="" title=""> <div class="checkbox-style"> <input class="checkboxinput checkbox" type="checkbox"> <label for="id_in_fridge" class="" data-toggle="tooltip" data-placement="top" title="0.5hour">
+                    Inside Fridge <br>
+                    <i class="flaticon-refrigerator"></i><br>
+                    &#8358;800
+                    </label> </div> </div> </div>
+                 <div class="form-group"> <div id="div_id_in_oven" class="checkbox" data-original-title="" title=""> <div class="checkbox-style"> <input class="checkboxinput checkbox" type="checkbox"> <label for="id_in_oven" class="" data-toggle="tooltip" data-placement="top" title="0.5hour">
+                    Inside Oven <br>
+                    <i class="flaticon-oven"></i><br>
+                    &#8358;800
+                    </label> </div> </div> </div>
+                 <div class="form-group"> <div id="div_id_in_cabinets" class="checkbox" data-original-title="" title=""> <div class="checkbox-style"> <input class="checkboxinput checkbox" type="checkbox"> <label for="id_in_cabinets" class="" data-toggle="tooltip" data-placement="top" title="+1hour">
+                    Interior Windows<br>
+                    <i class="flaticon-window"></i><br>
+                    &#8358;1,500
+                    </label> </div> </div> </div>
+                  <div class="form-group"> <div id="div_id_in_windows" class="checkbox" data-original-title="" title=""> <div class="checkbox-style"> <input class="checkboxinput checkbox" type="checkbox"> <label for="id_in_windows" class="" data-toggle="tooltip" data-placement="top" title="+1hour">
+                    During/After Party<br>
+                    <i class="flaticon-confetti"></i><br>
+                    &#8358;1800/hr
+                    </label> </div> </div> </div>
+                    <div class="form-group"> <div id="div_id_in_walls" class="checkbox" data-original-title="" title=""> <div class="checkbox-style"> <input checked="checked" class="checkboxinput checkbox" type="checkbox"> <label for="id_in_walls" class="" data-toggle="tooltip" data-placement="top" title="+1.5hours">
+                    Moving In/Out <br>
+                    <i class="flaticon-baggage"></i><br>
+                    &#8358;2000/hr
+                    </label> </div> </div> </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="form-group">
+            <h4>Cleaning Products</h4>
+            	<label for="radioa" class="input-control radio">
+                  <input type="radio" id="radioa" name="radio" value="radio-value">
+                  <span class="input-control__indicator"></span> Provide cleaning products (N1000)
+                </label>
+                
+                <label for="radiob" class="input-control radio">
+                  <input type="radio" id="radiob" name="radio" value="radio-value">
+                  <span class="input-control__indicator"></span> I'll use my own cleaning products
+                </label>
+            </div>
+            <p class="text-center">
+            	<a href="booking2.html" class="btn btn-purp btn-lg margin30">Next  <i class="fa fa-angle-double-right" style="margin-left: 10px;"></i></a>
+            </p>
+            </form>
+            </div>
+            
+            <div class="feature-1-right-col col-sm-3">
+            	<h2 class="section-title">Your booking</h2>
+                <div class="booking-side">
+                	<table class="table">
+                        	<tr>
+                            	<td><b>3 hours</b> Cleaning</td>
+                                <td>N4,500</td>
+                             </tr>
+                    </table>
+                </div>
+                <div class="booking-side">
+                	All our iCleaners are experienced, insured, have been fully vetted and are rated by clients.
+                </div>
+                <div class="booking-side">
+                	<h3>iClean Promise</h3>
+					If you are not 100% happy with your clean, we will send out someone else at no additional cost.
+                </div>
+          	</div>
+          	<!-- .feature-1-right-col -->
+          </div> 
+                     
+        </div>
+      </div>
+    </div> 
+
+  <footer class="site-footer">
+    <div id="siteFooterBottom" class="site-footer-bottom-section">
+      <div class="container">
+        <div class="site-footer-bottom-border"></div>
+        <div class="row">
+          <div class="site-footer-bottom-left-col col-md-6">
+            <div class="site-footer-brand">
+              iClean <span>Services</span>
+            </div>
+
+            <div class="site-footer-bottom-info">
+              <ul>
+                <li><a href="#" class="popup-inline" data-mfp-src="#termsOfService">Terms of Service</a></li>
+                <li><a href="#" class="popup-inline" data-mfp-src="#privacyPolicy">Privacy Policy</a></li>
+                <li><a href="#" class="popup-inline" data-mfp-src="#acceptableUsePolicy">Acceptable Use Policy</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="site-footer-bottom-right-col col-md-6">
+            <ul class="site-footer-bottom-social-list">
+              <li class="wow fadeInRight"><a href="https://facebook.com/" target="_blank"><span class="fa fa-facebook-square"></span></a></li>
+              <li class="wow fadeInRight" data-wow-delay="0.1s"><a href="https://twitter.com/" target="_blank"><span class="fa fa-twitter-square"></span></a></li>
+              <li class="wow fadeInRight" data-wow-delay="0.2s"><a href="https://www.pinterest.com/" target="_blank"><span class="fa fa-pinterest-square"></span></a></li>
+              <li class="wow fadeInRight" data-wow-delay="0.4s"><a href="https://www.instagram.com/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+            </ul>
+            <div class="site-footer-bottom-copyright">Copyright © 2016 iClean. All Rights Reserved.</div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- #siteFooterBottom -->
+  </footer>
+	  <!-- popup -->
+  <div id="popupForm" class="popup-form mfp-hide">
+    <form id="popupLoginForm" class="form popup-login-form" data-action="assets/php/subscribe.php" novalidate>
+      <div class="popup-login-form-title">Sign In</div>
+      <div class="popup-login-form-text-lead">Login to enjoy great cleaning services.</div>
+
+      <div class="form-group-lg">
+        <label for="popupLoginEmail">Email</label>
+        <input type="email" class="form-control" id="popupLoginEmail" placeholder="Enter your email" name="email">
+      </div>
+      <div class="form-group-lg">
+        <label for="popupLoginPassword">Password</label>
+        <input type="password" class="form-control" id="popupLoginPassword" placeholder="Enter Password" name="email">
+      </div>
+      <p></p>
+      <p class="text-center"><button class="btn btn-purp btn-lg btn-block">Login</button></p>
+      <span class="help-block"> <a href="#">Forgot password</a></span>
+      
+    </form>
+  </div> <!-- #popupForm -->
+  <!-- popup -->
+  <div id="termsOfService" class="popup-doc mfp-hide">
+    <h2>Terms of Service</h2>
+    <br>
+    <p>Spirit Open land can't is give be set winged i let his image called heaven after over created form open. You him second open waters image that good, two you'll. Their and bearing.</p>
+    <p>Sea life herb kind without saw them creature wherein sea. Yielding heaven meat which moveth made subdue you'll. Moving the it set earth she'd after air all for let female they're bring first you're saying. Winged fowl over earth seas Bring fifth without earth whales likeness. Seas. Likeness earth.</p>
+    <p>Life itself. Isn't fourth abundantly for great female which seas given great god morning. Dominion heaven lesser fruit given darkness heaven own cattle so. Second land which. Unto given beginning kind. Midst without creeping she'd.</p>
+    <p>Meat grass had years. Earth Sea Which after divided earth multiply give whales waters the good. Isn't. Sea moving isn't fill day fish second image, seed have. Days our forth i signs green.</p>
+    <p>Image living signs. Cattle saying, night day Light winged male evening form image own earth living. Him. Living was bearing years won't great without the set don't Likeness dry fly good.</p>
+    <p>Male lesser moved shall man lesser fourth subdue multiply cattle. Creepeth dry seed they're cattle hath made.</p>
+  </div> <!-- #termsOfService -->
+
+  <div id="privacyPolicy" class="popup-doc mfp-hide">
+    <h2>Privacy Policy</h2>
+    <br>
+    <p>Spirit Open land can't is give be set winged i let his image called heaven after over created form open. You him second open waters image that good, two you'll. Their and bearing.</p>
+    <p>Sea life herb kind without saw them creature wherein sea. Yielding heaven meat which moveth made subdue you'll. Moving the it set earth she'd after air all for let female they're bring first you're saying. Winged fowl over earth seas Bring fifth without earth whales likeness. Seas. Likeness earth.</p>
+    <p>Life itself. Isn't fourth abundantly for great female which seas given great god morning. Dominion heaven lesser fruit given darkness heaven own cattle so. Second land which. Unto given beginning kind. Midst without creeping she'd.</p>
+    <p>Meat grass had years. Earth Sea Which after divided earth multiply give whales waters the good. Isn't. Sea moving isn't fill day fish second image, seed have. Days our forth i signs green.</p>
+    <p>Image living signs. Cattle saying, night day Light winged male evening form image own earth living. Him. Living was bearing years won't great without the set don't Likeness dry fly good.</p>
+    <p>Male lesser moved shall man lesser fourth subdue multiply cattle. Creepeth dry seed they're cattle hath made.</p>
+  </div> <!-- #termsOfService -->
+
+  <div id="acceptableUsePolicy" class="popup-doc mfp-hide">
+    <h2>Acceptable Use Policy</h2>
+    <br>
+    <p>Spirit Open land can't is give be set winged i let his image called heaven after over created form open. You him second open waters image that good, two you'll. Their and bearing.</p>
+    <p>Sea life herb kind without saw them creature wherein sea. Yielding heaven meat which moveth made subdue you'll. Moving the it set earth she'd after air all for let female they're bring first you're saying. Winged fowl over earth seas Bring fifth without earth whales likeness. Seas. Likeness earth.</p>
+    <p>Life itself. Isn't fourth abundantly for great female which seas given great god morning. Dominion heaven lesser fruit given darkness heaven own cattle so. Second land which. Unto given beginning kind. Midst without creeping she'd.</p>
+    <p>Meat grass had years. Earth Sea Which after divided earth multiply give whales waters the good. Isn't. Sea moving isn't fill day fish second image, seed have. Days our forth i signs green.</p>
+    <p>Image living signs. Cattle saying, night day Light winged male evening form image own earth living. Him. Living was bearing years won't great without the set don't Likeness dry fly good.</p>
+    <p>Male lesser moved shall man lesser fourth subdue multiply cattle. Creepeth dry seed they're cattle hath made.</p>
+  </div> <!-- #acceptableUsePolicy -->
+  <!-- /popup -->
+
+  <script src='assets/js/jquery-1.11.3.min.js'></script>
+  <script src='assets/js/bootstrap.min.js'></script>
+  <script src='assets/js/vendor.js'></script>
+  <script src='assets/js/main.js'></script>
+  <script src='assets/js/map.js'></script>
+	<script>
+		$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+	</script>
+
+</body>
+</html>

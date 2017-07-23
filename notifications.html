@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>iClean.NG - Booking</title>
+  <title>iClean.NG - Notifications</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="author" content="">
@@ -50,145 +50,31 @@
         <div class="collapse navbar-collapse" id="navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="booking.html">Booking</a></li>
-            <li class="disabled"><a href="#">Your Total: N4,500</a></li>
+            <li><a href="booking.html">Book now</a></li>
             <li><a href="office-cleaning.html">Office Cleaning</a></li>
-            <li><a href="faqs.html">FAQs</a></li>
+            <li class="active"><a href="faqs.html">FAQs</a></li>
             <button class="navbar-btn btn btn-theme-2 popup-inline" type="button" data-mfp-src="#popupForm">Login</button>
+            <a href="cleaners/index.html" class="navbar-btn btn btn-theme-2 btn-warning">Become a Cleaner</a>
           </ul>
         </div> <!-- .navbar-collapse -->
       </div>
     </nav>
   </header> <!-- .site-header -->
-  
-  <div class="booking-stripe">
-  	<div class="container">
-        <div class="process">
-            <div class="process-row">
-                <div class="process-step next-step">
-                    <button type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-user fa-3x"></i></button>
-                    <p>Your bookings</p>
-                </div>
-                <div class="process-step  next-step">
-                    <button type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-calendar fa-3x"></i></button>
-                    <p>When you want it</p>
-                </div>
-                <div class="process-step">
-                    <button type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-thumbs-up fa-3x"></i></button>
-                    <p>Your contact</p>
-                </div> 
-                 <div class="process-step  next-step">
-                    <button type="button" class="btn btn-info btn-circle" disabled="disabled"><i class="fa fa-shopping-cart fa-3x"></i></button>
-                    <p>Let's go cleaning</p>
-                </div> 
-            </div>
-        </div>
-        </div>
-  </div>
-
+    <div class="empty-stripe">
+    </div>
   <div class="main">
     <div class="booking-section">
       <div class="container">
         <div class="feature-1-row row">
           <div class="feature-1-left-col col-sm-9">
-            <h2 class="section-title">Where are we coming to clean?</h2>
-            <p>If you have used our service before, please <a href="#" class="popup-inline" data-mfp-src="#popupForm">click here</a> to login</p>
-            <form class="booking-form" name="bookingform">
-            	<div class="form-group-lg">
-                	<div class="col-md-4 col-xs-12">
-                        <label for="address">Your location</label>
-                        <select class="form-control">
-                        	<option>Select</option>
-                            <option>Apo</option>
-                            <option>Asokoro</option>
-                            <option>Gwarimpa</option>
-                            <option>Garki</option>
-                            <option>Maitama</option>
-                            <option>Central Area</option>
-                            <option>Games Village</option>
-                            <option>Kabusa</option>
-                            <option>Karmo</option>
-                            <option>Karsana</option>
-                            <option>Katampe</option>
-                            <option>Jahi</option>
-                            <option>Lokogoma</option>
-                            <option>Life camp</option>
-                            <option>Jabi</option>
-                            <option>Utako</option>
-                            <option>Wumba</option>
-                            <option>Wuse</option>
-                        </select>
-                    </div>
-                    <div class="col-md-8 col-xs-12">
-                        <label for="address">Your address</label>
-                        <input type="text" class="form-control" placeholder="Your Address">
-                    </div>
-                </div>
-                <div class="clearfix margin30"></div>
-                <div class="form-group-lg">
-                	<div class="col-md-12">
-                	<label for="email">Your email</label>
-                    <input type="email" class="form-control" placeholder="you@youremail.com">
-                    </div>
-                </div>        
-            	<div class="clearfix margin30"></div>
-            	<div class="form-group-lg">
-                	<div class="col-md-6 col-xs-12">
-                    <label for="phone1">Phone</label>
-                    <input type="text" class="form-control" placeholder="0806 1234 567">
-                    </div>
-                    <div class="col-md-6 col-xs-12">
-                    <label for="phone1">Alternate phone (optional)</label>
-                    <input type="text" class="form-control" placeholder="0804 7890 123">
-                    </div>
-                </div>
-                <div class="clearfix margin30"></div>
-                <div class="form-group-lg">
-                <div class="col-md-12 col-xs-12">
-                    <div class="input-group">
-                    <label for="question_4-styled" class="normal-wrap">Was a recent construction work carried out in your apartment?</label>
-                    <div id="question_4-styled" class="mc-radio-group js- mc-radio-group-spaced" data-mc-radio="question_4">
-                        <div data-value="12" class="mc-radio js-mc-radio">Yes</div>
-                        <div data-value="13" class="mc-radio js-mc-radio">No</div>
-                    </div>
-
-                    <div class="mc-radio-real hidden" data-radio="question_4">
-                        <input name="question_4" value="12" type="radio">
-                        <input name="question_4" value="13" type="radio">
-                    </div>
-                    <span class="help-block">Please note that we would need to send a representative to confirm the construction work</span>
-                </div>
-                </div>
-                	<div class="col-md-12">
-                    	<label for="instructions">Special Notes or Instructions</label>
-                        <span class="help-block">Please use this to clearly give us any necessary details on how to gain access to your apartment</span>
-                        <textarea name="instructions" class="form-control" placeholder="Some important information that you need us to know, such as, the kind of Pet you have or how we would get into your apartment?"></textarea>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-            <p class="text-center">
-            	<a href="check-out.html" class="btn btn-purp btn-lg margin30">Next  <i class="fa fa-angle-double-right" style="margin-left: 10px;"></i></a>
-            </p>
-            </form>
+            <h2 class="section-title"><b></b></h2>
+            <p>Domestic workers, maids, or housekeepers, we prefer the term "iCleanStars". Either way, they're looking forward to helping you clean your home. Have any questions? To assist, we have outlined some FAQ's, and also included how best to use the platform in different cases.</p>
+ 				
+          
             </div>
             
             <div class="feature-1-right-col col-sm-3">
-            	<h2 class="section-title">Your booking</h2>
-                <div class="booking-side">
-                	<table class="table">
-                        	<tr>
-                            	<td><b>3 hours</b> Cleaning</td>
-                                <td>N4,500</td>
-                             </tr>
-                    </table>
-                </div>
-                <div class="booking-side">
-                	All our iCleaners are experienced, insured, have been fully vetted and are rated by clients.
-                </div>
-                <div class="booking-side">
-                	<h3>iClean Promise</h3>
-					If you are not 100% happy with your clean, we will send out someone else at no additional cost.
-                </div>
+                <a href="booking.html"><img src="assets/images/iclean-book.jpg" class="img-responsive"></a>
           	</div>
           	<!-- .feature-1-right-col -->
           </div> 
@@ -248,7 +134,7 @@
       <span class="help-block"> <a href="#">Forgot password</a></span>
       
     </form>
-  </div><!-- #popupForm -->
+  </div> <!-- #popupForm -->
   <!-- popup -->
   <div id="termsOfService" class="popup-doc mfp-hide">
     <h2>Terms of Service</h2>

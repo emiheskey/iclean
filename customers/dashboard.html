@@ -24,8 +24,8 @@
 
     <!--  Custom CSS     -->
     <link href="assets/css/main.css" rel="stylesheet" />
-
-
+	<link href="assets/css/star-rating.css" media="all" rel="stylesheet" type="text/css" />
+    
     <!--  Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
@@ -225,7 +225,7 @@
                                         	<td>10,000</td>
                                         	<td><span class="label label-warning">Undone</span></td>
                                             <td>Ben Tombari</td>
-                                            <td><a href="#" class="btn btn-success btn-fill">Rate this service</a></td>
+                                            <td><a href="#myRating" data-toggle="modal" class="btn btn-success btn-fill">Rate this service</a></td>
                                         </tr>
                                         <tr>
                                         	<td>103</td>
@@ -269,7 +269,29 @@
 
     </div>
 </div>
-
+<!-- Rating Modal -->
+<div class="modal fade" id="myRating" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Rate this cleaner</h4>
+      </div>
+      <div class="modal-body">
+      	 <div class="form-group">
+        	<input id="input-id" type="text" class="rating" data-size="sm" data-min="0" data-max="5" data-step="0.1">
+        </div>
+        <div class="form-group">
+        	<textarea placeholder="Give us your reason(s)" class="form-control border-input"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success btn-fill btn-lg">Rate it</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 
@@ -290,6 +312,7 @@
 
 	<!-- Paper Dashboard ! -->
 	<script src="assets/js/main.js"></script>
+    <script src="assets/js/star-rating.js" type="text/javascript"></script>
 	<script type="text/javascript" src="assets/js/clipboard.min.js"></script>
     <script type="text/javascript">
 		new Clipboard('.btn');
@@ -298,6 +321,13 @@
 		$(function () {
 		  $('[data-toggle="tooltip"]').tooltip()
 		})
+	</script>
+    <script type="text/javascript">
+		// initialize with defaults
+		$("#input-id").rating();
+		
+		// with plugin options (do not attach the CSS class "rating" to your input if using this approach)
+		$("#input-id").rating({'size':'sm'});
 	</script>
     
 
